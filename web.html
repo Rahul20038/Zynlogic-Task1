@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Kitchen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="sticky top-0 bg-white shadow z-50">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Modern Kitchen</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-500">About</a></li>
+        <li><a href="#menu" class="hover:text-blue-500">Menu</a></li>
+        <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-white" style="background-image: url(./images/dream-kitchen-ideas.webp);">
+    <div class="bg-black bg-opacity-50 p-10 rounded">
+      <h2 class="text-4xl font-bold mb-4">Design Your Dream Kitchen</h2>
+      <p class="text-lg">Explore our modern, classic, and rustic kitchen styles</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 bg-gray-100 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p>At Modern Kitchen, our mission is to bring aesthetic elegance and functional design to every home. We believe kitchens should inspire creativity and comfort.</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8">Kitchen Styles</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./images/SPR-minimalist-kitchens-4767227-hero-b310f24f51a64a08941eba796a483086.jpg" alt="Modern Minimalist" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Modern Minimalist</h3>
+            <p>Sleek surfaces, clean lines, and a clutter-free environment define this design.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./images/AV3030_Weiss_M1.webp" alt="Classic Elegance" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Classic Elegance</h3>
+            <p>Timeless designs with detailed cabinetry and traditional aesthetics.</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./images/images (1).jpg" alt="Rustic Warmth" class="w-full">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Rustic Warmth</h3>
+            <p>Warm woods, natural finishes, and a cozy, inviting atmosphere.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="max-w-xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+      <form action="https://formspree.io/f/movekpvn" method="POST" class="space-y-4" accept-charset="UTF-8">
+        <input type="text" placeholder="Name" class="w-full border border-gray-300 p-3 rounded">
+        <input type="email" placeholder="Email" class="w-full border border-gray-300 p-3 rounded">
+        <textarea placeholder="Message" rows="5" class="w-full border border-gray-300 p-3 rounded"></textarea>
+        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-4 border-t">
+    <p>&copy; 2025 Modern Kitchen. All rights reserved.</p>
+  </footer>
+</body>
+</html>
